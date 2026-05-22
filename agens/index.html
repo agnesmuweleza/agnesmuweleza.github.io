@@ -12,259 +12,292 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.7;
-            color: #2c2520;
-            background-color: #fdfaf4; /* Beautiful Cream Background */
+            color: #2D241E;
+            /* Premium Perfume Oil / Gold Abstract Background Image */
+            background-image: url('https://images.unsplash.com/photo-1615655404746-8f058e875759?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             scroll-behavior: smooth;
         }
 
-        /* Black Header & Navigation */
+        /* Striking Black Header & Vibrant Navigation */
         header {
-            background-color: #111111; /* Sleek Black */
+            background: #0D0D0D; /* Rich Pitch Black */
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            border-bottom: 2px solid #d4af37; /* Subtle Gold Accent Line */
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid #FF5E62; /* Vibrant Coral Border Line */
         }
         nav {
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            padding: 20px;
+            padding: 18px 20px;
         }
         nav a {
-            color: #ffffff;
+            color: #FFFFFF;
             text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 0.95rem;
+            font-weight: 600;
+            font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 0 20px;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         nav a:hover {
-            color: #d4af37; /* Elegant Gold on Hover */
+            color: #FFD700; /* Bright Yellow Gold on Hover */
+            transform: translateY(-2px);
         }
 
-        /* Main Container */
+        /* Main Glassmorphism Container */
         .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 60px 20px;
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px 60px;
+            /* Bright, glowing semi-transparent cream overlay */
+            background: rgba(255, 253, 246, 0.85); 
+            backdrop-filter: blur(12px); /* Blurs the background image behind the text for premium readability */
+            -webkit-backdrop-filter: blur(12px);
+            border-left: 1px solid rgba(255, 255, 255, 0.4);
+            border-right: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
         }
 
-        /* Section Styling */
+        /* Beautiful Section Block Layouts */
         section {
-            padding: 100px 0 60px 0;
-            border-bottom: 1px solid #e8dec9;
-        }
-        section:last-of-type {
-            border-bottom: none;
+            padding: 80px 0 40px 0;
         }
 
-        /* Typography */
+        /* Typography & Vibrant Headings */
         h1 {
-            font-size: 3rem;
-            color: #111111;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #FF5E62, #FF9966); /* Vibrant Coral-Orange Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-align: center;
+            margin-bottom: 25px;
         }
         h3 {
-            font-size: 1.8rem;
-            color: #111111;
-            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #0D0D0D;
+            margin-bottom: 35px;
             text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+            font-weight: 700;
         }
         h3::after {
             content: '';
             display: block;
-            width: 60px;
-            height: 2px;
-            background-color: #d4af37;
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(90deg, #FF5E62, #FFD700); /* Dual Bright Accent Line */
             margin: 12px auto 0 auto;
+            border-radius: 2px;
         }
 
-        /* About Section Custom Card */
-        .about-card {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(163, 145, 122, 0.15);
-            border: 1px solid #f3ede0;
+        /* Inner Cards Styling */
+        .card {
+            background: #FFFFFF;
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 94, 98, 0.06); 
+            border: 1px solid rgba(255, 153, 102, 0.1);
+            transition: transform 0.3s ease;
         }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* About Text */
         #about p {
-            font-size: 1.2rem;
-            color: #50443c;
-            font-style: italic;
-            max-width: 650px;
+            font-size: 1.25rem;
+            color: #4A3E3D;
+            line-height: 1.9;
+            text-align: center;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Premium Education Table */
+        /* Bright Responsive Table */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
-            background: #ffffff;
-            border-radius: 8px;
+            background: #FFFFFF;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(163, 145, 122, 0.12);
+            box-shadow: 0 15px 35px rgba(255, 94, 98, 0.06);
+            border: 1px solid rgba(255, 153, 102, 0.1);
         }
         th, td {
-            padding: 18px 22px;
+            padding: 20px 25px;
             text-align: left;
         }
         th {
-            background-color: #1a1a1a;
-            color: #d4af37;
-            font-family: 'Montserrat', sans-serif;
+            background: #0D0D0D; /* Pitch Black header row */
+            color: #FFD700; /* High Contrast Bright Gold text */
+            font-weight: 600;
             text-transform: uppercase;
             font-size: 0.85rem;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
         td {
-            border-bottom: 1px solid #f3ede0;
-            color: #4a3f35;
-            font-size: 1.05rem;
+            border-bottom: 1px solid #FFF5EE;
+            color: #3D332E;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
         tr:last-child td {
             border-bottom: none;
         }
+        tr:nth-child(even) td {
+            background-color: #FFFDF9;
+        }
 
-        /* Hobbies Stylized List */
-        .hobbies-list {
-            background: #ffffff;
-            padding: 35px 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(163, 145, 122, 0.12);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        ol {
+        /* Beautiful Hobbies List */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             list-style: none;
-            counter-reset: perfume-counter;
         }
-        ol li {
-            counter-increment: perfume-counter;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+        .hobbies-grid li {
+            background: #FFFFFF;
+            padding: 20px 25px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #2D241E;
             display: flex;
             align-items: center;
-            color: #4a3f35;
+            box-shadow: 0 10px 20px rgba(255, 94, 98, 0.04);
+            border-left: 5px solid #FF5E62; /* Bold Bright Coral Accent Line */
         }
-        ol li:last-child {
-            margin-bottom: 0;
-        }
-        ol li::before {
-            content: "0" counter(perfume-counter) ".";
-            color: #d4af37;
-            font-weight: bold;
+        .hobbies-grid li::before {
+            content: '✦';
+            color: #FFD700; /* Gleaming gold spark icon */
             margin-right: 15px;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
         }
 
-        /* Elegant Contact Form */
+        /* Vibrant Contact Form */
         form {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(163, 145, 122, 0.15);
-            border: 1px solid #f3ede0;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
+            max-width: 650px;
+            margin: 0 auto 20px auto;
         }
         label {
             display: block;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #111111;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0D0D0D;
         }
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 12px 15px;
+            padding: 15px;
             margin-bottom: 25px;
-            border: 1px solid #dcd1ba;
-            border-radius: 4px;
+            border: 2px solid #FFEBE3;
+            border-radius: 12px;
             font-family: inherit;
-            background-color: #faf8f5;
-            color: #2c2520;
+            font-size: 1rem;
+            background-color: #FAFAFA;
+            color: #2D241E;
             transition: all 0.3s ease;
         }
         input[type="text"]:focus,
         input[type="email"]:focus,
         textarea:focus {
             outline: none;
-            border-color: #d4af37;
-            background-color: #ffffff;
-            box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+            border-color: #FF5E62;
+            box-shadow: 0 0 15px rgba(255, 94, 98, 0.2);
         }
         input[type="submit"] {
-            background-color: #111111;
-            color: #ffffff;
-            border: 1px solid #d4af37;
-            padding: 12px 30px;
-            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(45deg, #FF5E62, #FF9966); /* Radiant Gradient Button */
+            color: #FFFFFF;
+            border: none;
+            padding: 16px 35px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.9rem;
-            border-radius: 4px;
+            font-size: 1rem;
+            border-radius: 12px;
             cursor: pointer;
             width: 100%;
+            box-shadow: 0 10px 25px rgba(255, 94, 98, 0.3);
             transition: all 0.3s ease;
         }
         input[type="submit"]:hover {
-            background-color: #d4af37;
-            color: #111111;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 94, 98, 0.4);
         }
 
-        /* Social Links styling */
+        /* Social Connection Layout */
         .social-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 50px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
         }
         .social-links a {
-            color: #50443c;
+            color: #0D0D0D;
             text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
+            font-weight: 700;
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0 10px;
-            transition: color 0.3s ease;
+            letter-spacing: 1.5px;
+            padding: 10px 20px;
+            border: 2px solid #0D0D0D;
+            border-radius: 30px;
+            background: #FFFFFF;
+            transition: all 0.3s ease;
         }
         .social-links a:hover {
-            color: #d4af37;
+            background-color: #0D0D0D;
+            color: #FFD700;
         }
 
-        /* Black Footer */
+        /* Jet-Black Footer */
         footer {
-            background-color: #111111; /* Sleek Black */
-            color: #888888;
+            background-color: #0D0D0D; /* Rich Pitch Black */
+            color: #A0A0A0;
             text-align: center;
-            padding: 30px 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8rem;
+            padding: 35px 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
             letter-spacing: 1px;
-            border-top: 1px solid #222222;
+            border-top: 2px solid #FF5E62;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 60px 10px;
+                padding: 30px 20px;
+            }
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2.8rem; }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -281,7 +314,7 @@
 
         <section id="about">
             <h1>Muweleza Agnes</h1>
-            <div class="about-card">
+            <div class="card">
                 <p>Hello! My name is Muweleza Agnes. I am passionate about oil perfumes, mixing oils, and learning new skills every day. I enjoy coming up with new scents that elevate a person's smell.</p>
             </div>
         </section>
@@ -310,26 +343,46 @@
 
         <section id="hobbies">
             <h3>My Hobbies</h3>
-            <div class="hobbies-list">
-                <ol>
-                    <li>Watching movies</li>
-                    <li>Listening to podcasts</li>
-                    <li>Touring</li>
-                    <li>Reading</li>
-                </ol>
-            </div>
+            <ul class="hobbies-grid">
+                <li>Watching movies</li>
+                <li>Listening to podcasts</li>
+                <li>Touring</li>
+                <li>Reading</li>
+            </ul>
         </section>
 
         <section id="contact">
             <h3>Contact Me</h3>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Muweleza Agie">
+            <div class="card">
+                <form action="#" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Muweleza Agie">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="agieperfumes@gmail.com">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="agieperfumes@gmail.com">
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Perfumes for both men and women"></textarea>
-                
-                <input type="submit" value="Send Message
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Perfumes for both men and women"></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="social-container">
+                <h3>Find Me On</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Muweleza Agi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
