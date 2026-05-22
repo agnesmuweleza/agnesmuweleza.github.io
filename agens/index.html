@@ -1,49 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Muweleza Agnes</title>
+    <style>
+        /* Global Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #2c3e50;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 15px 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Layouts */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            padding: 80px 0 40px 0; /* Extra top padding so fixed nav doesn't cover content */
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h1, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #1abc9c;
+            margin-top: 8px;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Education Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #2c3e50;
+        }
+
+        /* Hobbies List */
+        ol {
+            padding-left: 20px;
+        }
+        ol li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        /* Contact Form */
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #1abc9c;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-<title>My profile </title>
-    </head>
-    
-     <body>
-    <nav>
-      <a href="index.html">About Me</a> |
-      <a href="edu.html">Education</a> |
-      <a href="buss.html">Business</a> |
-      <a href="hob.html">Hobbies</a> |
-      <a href="contact.html">Contact us</a> |
-    </nav>
-     
-<h1>  Muweleza Agnes </h1>
-  <p> hello! My name is Muweleza Agnes . I am passionat about oil perfumes,<br>
-    mixing oils and learning new skills every day.i enjoy coming up with new <br>
-    cents that elevats a persons smell.</p>
-  
-        <footer>
-         <p>&copy; 2026 Muweleza Agi . All rights reserved.</p>
-          </footer>
+<body>
 
-          </body>
-        </html>
+    <header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
 
+    <div class="container">
 
+        <section id="about">
+            <h1>Muweleza Agnes</h1>
+            <p>Hello! My name is Muweleza Agnes. I am passionate about oil perfumes, mixing oils, and learning new skills every day. I enjoy coming up with new scents that elevate a person's smell.</p>
+        </section>
 
+        <section id="education">
+            <h3>Education Background</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>School/University</th>
+                        <th>Award/Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Uganda Christian University</td>
+                        <td>Diploma in Journalism and Mass Communication</td>
+                    </tr>
+                    <tr>
+                        <td>UCU</td>
+                        <td>Post Graduate Certificate in Journalism</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section id="hobbies">
+            <h3>My Hobbies</h3>
+            <ol>
+                <li>Watching movies</li>
+                <li>Listening to podcasts</li>
+                <li>Touring</li>
+                <li>Reading</li>
+            </ol>
+        </section>
 
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Muweleza Agie">
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="agieperfumes@gmail.com">
 
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Perfumes for both men and women"></textarea>
+                
+                <input type="submit" value="Send Message">
+            </form>
 
+            <h3>My Social Media Links</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
 
+    </div>
 
+    <footer>
+        <p>&copy; 2026 Muweleza Agi. All rights reserved.</p>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-    </body>
+</body>
 </html>
